@@ -15,7 +15,7 @@ public class Main {
         Book viy = new Book("Вий", 1835);
         viy.setDateOfPublication(1836);
 
-        System.out.println(dostoevkiy.getNameWriter() + " " + crimeAndPunishment.getDateOfPublication() + " " + crimeAndPunishment.getBookTitle());
+        System.out.println(dostoevkiy.getNameWriter() + "  " + crimeAndPunishment.getDateOfPublication() + " " + crimeAndPunishment.getBookTitle());
         System.out.println(tolstoy.getNameWriter() + " " + warAndWorld.getDateOfPublication() + " " + warAndWorld.getBookTitle());
         System.out.println(gogol.getNameWriter() + " " + viy.getDateOfPublication() + " " + viy.getBookTitle());
 

@@ -18,6 +18,7 @@ public class Book {
 
     public void setDateOfPublication(int dateOfPublication) {
         this.dateOfPublication = dateOfPublication;
+
     }
 
 }
