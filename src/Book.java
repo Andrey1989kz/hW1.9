@@ -1,19 +1,23 @@
 public class Book {
 
-    private String bookTitle;
+    private final  String bookTitle;
     private int dateOfPublication;
-    public  Book(String bookTitle, int dateOfPublication) {
+    private final Author author;
+
+    public  Book(String bookTitle, int dateOfPublication,Author author) {
         this.bookTitle = bookTitle;
         this.dateOfPublication = dateOfPublication;
+        this.author = author;
     }
-
     public String getBookTitle() {
         return this.bookTitle;
     }
-
     public int getDateOfPublication() {
         return this.dateOfPublication;
+    }
 
+    public Author getAuthor() {
+        return this.author;
     }
 
     public void setDateOfPublication(int dateOfPublication) {
@@ -21,4 +25,12 @@ public class Book {
 
     }
 
+    @Override
+    public String toString() {
+        return
+                bookTitle + " " +
+                       " "+ dateOfPublication +
+                       " "+ author;
+
+    }
 }
